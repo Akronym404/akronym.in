@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <head> 
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=B612+Mono&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Not_found</title>
+
+    <script>
+        function myFunction() {
+            var x = document.URL;
+            var x = x.split('/').pop()
+            document.getElementById("file").innerHTML = x;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <body onload="myFunction() ;">
+<!-- Navigation start -->
+<nav>
+    <ul>
+      <li class="term"><a href="/">Akronym Home </span><span id="file"></span></a></li>
+      <li class="items"><a href="#">Writeup</a></li>
+      <li class="items"><a href="#">About Me</a></li>
+      <li class="items"><a href="#">Contact_me</a></li>
+      <li class="btn"><a href="#">ls</a></li>
+  </ul> 
+</nav>
+  <script>
+    $(document).ready(function(){
+      $('.btn').click(function(){
+        $('.items').toggleClass("show");
+        $('ul li').toggleClass("hide");
+      });
+    });
+  </script>
+<!-- Navigation End  -->
+        <p id="demo"></p>
+
+        <p class="error">
+            File Not Found!
+        </p>
+        <!-- footer start here -->
+        <footer class="footer">Made with 💜 by Abhishek Kawale©</footer>
+        <!-- footer end here -->
+    </body>
+
+</html>
